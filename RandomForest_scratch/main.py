@@ -7,8 +7,8 @@ from sklearn.preprocessing import LabelEncoder
 from random_forest import RandomForest
 
 # ── Load data ─────────────────────────────────────────────────────
-train = pd.read_csv(r'C:\Users\Dell\OneDrive\Desktop\archive\train.csv')
-test  = pd.read_csv(r'C:\Users\Dell\OneDrive\Desktop\archive\test.csv')
+train = pd.read_csv(r'data\train.csv')
+test  = pd.read_csv(r'data\test.csv')
 
 # Use sample for speed (from scratch is slow)
 train = train.sample(n=5000, random_state=42)
@@ -39,7 +39,7 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f"\nAccuracy : {accuracy:.4f} ({accuracy*100:.2f}%)")
 print("\nClassification Report :")
 labels_present = np.unique(np.concatenate([y_test, y_pred]))
-class_names = le.inverse_transform(labels_present)
+class_names = [str(name) for name in le.inverse_transform(labels_present)]
 print(classification_report(y_test, y_pred, labels=labels_present, target_names=class_names))
 
 # ── Confusion Matrix ──────────────────────────────────────────────
@@ -55,4 +55,4 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 
-print("\nRandom Forest From Scratch terminé ✓")
+print("\nRandom Forest From Scratch terminé (Done)")

@@ -85,7 +85,7 @@ SIKEN/
 │
 ├── dashboard.py
 ├── email_alert.py
-├── requirements.txt
+|
 └── README.md
 ```
 

@@ -56,5 +56,39 @@ Once configured, the application will automatically send an email when an anomal
 
 This project is intended for educational purposes and demonstrates how machine learning can be used for network anomaly detection.
 
+## Project Structure
+
+```
+SIKEN/
+│── data/
+│   ├── train.csv
+│   └── test.csv
+│
+├── Gradient_Boosting/
+│   ├── decision_tree.py
+│   ├── gradient_boosting.py
+│   └── main.py
+│
+├── Isolation_forest/
+│   ├── iso_forest.py
+│   ├── iso_tree.py
+│   └── main.py
+│
+├── K_means/
+│   ├── kmeans.py
+│   └── main.py
+│
+├── RandomForest_scratch/
+│   ├── decision_tree.py
+│   ├── random_forest.py
+│   └── main.py
+│
+├── dashboard.py
+├── email_alert.py
+├── requirements.txt
+└── README.md
+```
+
+
 
 ## Special thanks to my teammate Kenza for surviving this project with me. We fixed bugs, questioned our life choices, and somehow made it work. 😂 

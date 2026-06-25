@@ -57,4 +57,4 @@ Once configured, the application will automatically send an email when an anomal
 This project is intended for educational purposes and demonstrates how machine learning can be used for network anomaly detection.
 
 
-** Special thanks to my teammate Kenza for surviving this project with me. We fixed bugs, questioned our life choices, and somehow made it work. 😂 **
+## Special thanks to my teammate Kenza for surviving this project with me. We fixed bugs, questioned our life choices, and somehow made it work. 😂 
